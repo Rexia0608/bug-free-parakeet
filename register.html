@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - MKQL Tutorial School</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MKQL Tutorial School</h1>
+            <p>Excellence in Education</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="registration-form">
+            <h2>Course Registration</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Course Category</label>
+                    <select id="category" required>
+                        <option value="">Select Category</option>
+                        <option value="music">Music</option>
+                        <option value="academic">Academic</option>
+                        <option value="technical">Technical</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subCategory">Sub-category</label>
+                    <select id="subCategory" >
+                        <option value="">Select Sub-category</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentMode">Mode of Payment</label>
+                    <select id="paymentMode" required>
+                        <option value="">Select Payment Mode</option>
+                        <option value="cash">Cash (5% discount)</option>
+                        <option value="installment">Installment (3 payments)</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Calculate Fees</button>
+            </form>
+            
+            <div id="feeSummary"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MKQL Tutorial School. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/logicScript.js"></script>
+</body>
+</html>
